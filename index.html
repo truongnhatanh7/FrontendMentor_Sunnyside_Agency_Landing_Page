@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -13,21 +15,59 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./mobile.css">
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <div class="main">
+    <header>
+      <img src="./images/logo.svg" alt="" class="logo">
+      <nav class="navbar">
+        <a href="#" class="navbar-item">About</a>
+        <a href="#" class="navbar-item">Services</a>
+        <a href="#" class="navbar-item">Projects</a>
+        <button class="navbar-btn">Contact</button>
+      </nav>
+    </header>
+    
+    <section class="content">
+      <div class="content-wrapper">
+        <h1 class="header-title">WE ARE CREATIVES</h1>
+        <img src="./images/desktop/image-header.jpg" alt="" class="img-header">
+        <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg" class="arrow-down-icon"><g stroke="#FFF" stroke-width="6" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3v100M3 95.484l15 15 15-15"/></g></svg>
+      </div>
 
-  We are creatives
+      <div class="opening-gallery">
+        <div class="card desc-card">
+          <div class="card-content-wrapper">
+            <h3 class="card-heading">Transform your brand</h3>
+            <p class="card-desc">
+              We are a full-service creative agency specializing in helping brands grow fast. 
+              Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <a href="" class="learn-more-link">LEARN MORE</a>
+          </div>
+        </div>
+        <div class="card picture-card">
+          <img src="./images/desktop/image-transform.jpg" alt="">
+        </div>
+        <div class="card picture-card">
+          <img src="./images/desktop/image-stand-out.jpg" alt="">
+        </div>
+        <div class="card picture-w-desc-card">
 
-  Transform your brand
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+        </div>
+      </div>
+    </section>
+    
+    <footer>
 
-  Learn more
+    </footer>
+
+  </div>
+  <!-- About
+
 
   Stand out to the right audience
 
@@ -58,11 +98,11 @@
   About
   Services
   Projects
-  Contact
+  Contact -->
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Your Name Here</a>. -->
   </div>
 </body>
 </html>

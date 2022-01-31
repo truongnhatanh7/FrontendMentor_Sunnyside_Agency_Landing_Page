@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --graphic-design-text: hsl(167, 40%, 24%);
+    --photography-text: hsl(198, 62%, 26%);
+    --footer: hsl(168, 34%, 41%);
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Fraunces', serif;
+}   
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    
+}
+
+.main {
+    width: 100%;
+    
+}
+
+header {
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 48px;
+    margin: 16px 0;
+}
+
+.logo {
+    height: 100%;
+    padding: 16px 0;
+    
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar-item {
+    text-decoration: none;
+    color: var(--white);
+    padding: 6px 0;
+    margin-left: 40px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.navbar-btn {
+    color: var(--graphic-design-text);
+    border-style: none;
+    background-color: var(--white);
+    padding: 6px 20px;
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 32px;
+    margin-left: 40px;
+
+}
+
+
+.content {
+    width: 100%;
+    z-index: 0;
+}
+
+.content-wrapper {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.header-title {
+    position: absolute;
+    top: 240px;
+    color: var(--white);
+    font-size: 48px;
+
+}
+
+.img-header {
+    width: 100%;
+    perspective: 10;
+}
+
+.arrow-down-icon {
+    position: absolute;
+    top: 420px;
+}
+
+.opening-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(3, 50vh);
+    
+    
+}
+
+
+
+.card-content-wrapper {
+    padding: 120px;
+}
+
+.card {
+    width: 100%;
+    height: 50vh;
+}
+
+
+.desc-card {
+    color: var(--photography-text);
+    height: 50vh;
+}
+
+.card-heading {
+    font-size: 42px;
+}
+
+.card-desc {
+    margin-top: 32px;
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 32px;
+}
+
+.learn-more-link {
+    position: relative;
+    text-decoration: none;
+    color: var(--photography-text);
+    z-index: 2;
+}
+
+.learn-more-link::after {
+    opacity: 0.3;
+    content: '';
+    display: block;
+    position: absolute;
+    border: 4px solid var(--yellow);
+    top: 15px;
+    width: 112px;
+    z-index: 1;
+}
+
+.picture-card img {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+}
